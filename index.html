@@ -50,6 +50,7 @@
             display: flex;
             gap: 32px;
             flex-wrap: wrap;
+            align-items: center;
         }
         nav a {
             color: #fff;
@@ -59,6 +60,20 @@
         }
         nav a:hover {
             color: #FF7610;
+        }
+        .lang-switch {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(51, 178, 180, 0.2);
+            padding: 6px 12px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            transition: 0.2s;
+        }
+        .lang-switch:hover {
+            background: #FF7610;
+            color: white;
         }
         .hero {
             display: flex;
@@ -328,6 +343,14 @@
             .section-title {
                 font-size: 1.8rem;
             }
+            .gallery img {
+                max-width: calc(50% - 12px);
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery img {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -345,6 +368,7 @@
                 <a href="#app">Application</a>
                 <a href="#privacy">Protection des données</a>
                 <a href="#contact">Contact</a>
+                <a href="index_en.html" class="lang-switch"><i class="fas fa-globe"></i> English</a>
             </nav>
         </header>
 
@@ -358,7 +382,6 @@
                 </div>
             </div>
             <div class="hero-image">
-                <!-- URL brute de l'image -->
                 <img src="https://raw.githubusercontent.com/alychkeir/miawtech-site/main/screenshot01.png" alt="MiawTech Cat Flap">
             </div>
         </section>
@@ -466,7 +489,6 @@
             <div class="app-preview">
                 <p style="font-size: 1.1rem; margin-bottom: 20px;">Interface intuitive, statistiques détaillées et contrôle total.</p>
                 <div class="gallery" style="margin-bottom: 30px;">
-                    <!-- URLs brutes GitHub -->
                     <img src="https://raw.githubusercontent.com/alychkeir/miawtech-site/main/screenshot1.jpg" alt="Écran accueil app">
                     <img src="https://raw.githubusercontent.com/alychkeir/miawtech-site/main/screenshot3.jpg" alt="Planning horaire">
                     <img src="https://raw.githubusercontent.com/alychkeir/miawtech-site/main/screenshot7.jpg" alt="Historique des passages">
